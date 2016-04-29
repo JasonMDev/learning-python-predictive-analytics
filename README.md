@@ -15,12 +15,12 @@ and published on Feb 2016.
 - [x] Reading the data: variations and examples
 - [x] Data frames and delimiters.
 
-- [x] Case 1: Reading a dataset using the read_csv method
-  - [x] File: titanicReadCSV.py
-  - [x] File: titanicReadCSV1.py
-  - [x] File: readCustomerChurn.py
-  - [x] File: readCustomerChurn2.py
-  - [x] File: changeDelimiter.py
+####Case 1: Reading a dataset using the read_csv method
+- [x] File: titanicReadCSV.py
+- [x] File: titanicReadCSV1.py
+- [x] File: readCustomerChurn.py
+- [x] File: readCustomerChurn2.py
+- [x] File: changeDelimiter.py
 
 - [x] Case 2: Reading a dataset using the open method of Python
   - [x] File: readDatasetByOpenMethod.py
@@ -53,3 +53,53 @@ and published on Feb 2016.
  - [x] File: plotData.py
  - [x] Figure file: ScatterPlots.jpeg
  - [x] Plot Types: Scatterplot, Histograms and boxplots
+
+###Chapter 3: Data Wrangling
+####Subsetting a dataset
+- [x] Selecting Columns
+ - [x] File: subsetDataset.py
+- [x] Selecting Rows
+ - [x] File: subsetDatasetRows.py
+- [x] Selecting a combination of rows and columns
+ - [x] File: subsetColRows.py
+- [x] Creating new columns
+ - [x] File: subsetNewCol.py
+
+####Generating random numbers and their usage
+- [x] Various methods for generating random numbers
+ - [x] File: generateRandomNumbers.py
+- [x] Seeding a random number
+ - [x] File: generateRandomNumbers.py
+- [x] Generating random numbers following probability distributions
+ - [x] File: generateRandomProbDistr.py
+ - [x] Probability density function: PDF = Prob(X=x)
+ - [x] Cumulative density function: CDF(x) = Prob(X<=x)
+ - [x] Uniform distribution: random variables occur with the same (uniform) frequency/probability
+ - [x] Normal distribution: Bell Curve and most ubiquitous and versatile probability distribution
+- [x] Using the Monte-Carlo simulation to find the value of pi
+ - [x] File: calcPi.py
+ - [x] Geometry and mathematics behind the calculation of pi
+- [x] Generating a dummy data frame
+ - [x] File: generateDummyDataFrame.py
+
+####Grouping the data – aggregation, filtering, and transformation
+- [ ] Subtitle
+ - [ ] File:
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ]   
+
+####SubChapter
+- [ ]Section
+ - [ ] File:
+ - [ ] SubSection
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ]   
