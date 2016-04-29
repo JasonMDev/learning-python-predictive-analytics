@@ -1,18 +1,12 @@
-# learning-python-predictive-analytics
-Tracking, notes and programming snippets while learning predictive analytics
+# Ruby on Rails Tutorial: Sample Application
 
-# my_cf_project
-This is CareerFoundry Project.
-This is the first Achievement
-The main objective is to build a Responsive Portfolio Website
-
-
-See my page at: http://jasonmans.bitballoon.com/
-
-# To Do List
+These are my notes from working through the book
+[*Learning Predictive Analytics with Python*](https://www.packtpub.com/big-data-and-business-intelligence/learning-predictive-analytics-python)
+by [Ashish Kumar](https://in.linkedin.com/in/ashishk64)
+and published on Feb 2016.
 
 ## General
-
+###Chapter 1
 - [x] CHeck lesson 8 regarding variables loop and borders. Ues test images.
 - [ ] Add actual CV to course. A2L3(replace file in assets.)
  - [ ] Fix padding of the work summary.
