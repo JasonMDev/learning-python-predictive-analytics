@@ -1,0 +1,165 @@
+﻿1. # Importing the dataset
+ import pandas as pd  
+ data = pd.read_csv('E:/Personal/Learning/Datasets/Book/titanic3.csv') 
+
+
+2. # Passing the directory address and filename as variables
+import pandas as pd
+path = 'E:/Personal/Learning/Datasets/Book'
+filename = 'titanic3.csv'
+fullpath = path+'/'+filename
+data = pd.read_csv(fullpath)
+
+3.  #  Reading a .txt dataset with a comma delimiter
+import pandas as pd
+data = read_csv('E:/Personal/Learning/Datasets/Book/Customer Churn Model.txt') 
+
+
+4.  #  Specifying the column names of dataset from a list
+import pandas as pd
+data = pd.read_csv('E:/Personal/Learning/Datasets/Book/Customer Churn Model.txt') 
+data.columns.values
+data_columns = pd.read_csv('E:/Personal/Learning/Predictive Modeling Book/Book Datasets/Customer Churn Columns.csv')
+data_column_list = data_columns['Column_Names'].tolist()
+data=pd.read_csv('E:/Personal/Learning/Predictive Modeling Book/Book Datasets/Customer Churn Model.txt',header=None,names=data_column_list)
+data.columns.values
+
+
+5. #   Opening the dataset using Open method
+data=open('E:/Personal/Learning/Predictive Modeling Book/Book Datasets/Customer Churn Model.txt','r')
+cols=data.next().strip().split(',')
+no_cols=len(data.next().strip().split(','))
+
+counter=0
+main_dict={}
+for col in cols:
+    main_dict[col]=[]
+
+for line in data:
+    values = line.strip().split(',')
+    for i in range(len(cols)):
+        main_dict[cols[i]].append(values[i])
+    counter += 1
+
+print "The dataset has %d rows and %d columns" % (counter,no_cols)
+
+import pandas as pd
+df=pd.DataFrame(main_dict)
+print df.head(5)
+
+
+
+6. # Changing delimiter of a dataset
+
+infile='E:/Personal/Learning/Datasets/Book/Customer Churn Model.txt'
+outfile='E:/Personal/Learning/Datasets/Book/Tab Customer Churn Model.txt'
+with open(infile) as infile1:
+	with open(outfile,'w') as outfile1:
+		for line in infile1:
+			fields=line.split(',')
+			outfile1.write('/t'.join(fields))
+
+
+7. # Importing data from a URL
+
+import pandas as pd
+medal_data=pd.read_csv('http://winterolympicsmedals.com/medals.csv')
+
+
+import csv
+import urllib2
+
+url='http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data’
+response=urllib2.urlopen(url)
+cr=csv.reader(response)
+
+for rows in cr:
+	print rows
+
+8. # Reading from an .xls or .xlsx file
+
+import pandas as pd
+data=pd.read_excel('E:/Personal/Learning/Predictive Modeling Book/Book Datasets/titanic3.xls','titanic3')
+
+import pandas as pd
+data=pd.read_excel('E:/Personal/Learning/Predictive Modeling Book/Book Datasets/titanic3.xlsx','titanic3')
+
+9. # Writing to a csv or an excel file
+
+df.to_csv(‘E:/Personal/Learning/Predictive Modeling Book/Book Datasets/Customer Churn Model.csv’
+
+
+df.to_excel(‘E:/Personal/Learning/Predictive Modeling Book/Book Datasets/Customer Churn Model.csv’
+
+
+10. # Summary/DImensions/Structure
+
+data.head()
+data.shape
+data.columns.values
+data.describe()
+data.dtypes
+
+
+11. # Handling missing Values
+
+pd.isnull(data[‘body’]) 
+pd.notnull(data['body'])
+pd.isnull(data['body']).values.ravel().sum()
+pd.nottnull(data['body']).values.ravel().sum()
+data.dropna(axis=0,how='all')
+data.dropna(axis=0,how='any')
+data.fillna(0)
+data.fillna(‘missing’)
+data[‘body’].fillna(0)
+data['body']
+data['age']
+data['age'].fillna(data['age'].mean())
+data['age'].fillna(method='ffill')
+data['age'].fillna(method='backfill')
+
+
+12. # Dummy Variable
+
+dummy_sex=pd.get_dummies(data['sex'],prefix='sex')
+column_name=data.columns.values.tolist()
+column_name.remove('sex')
+data[column_name].join(dummy_sex)
+
+13. # Basic Scatter Plot
+
+import pandas as pd
+data=pd.read_csv('E:/Personal/Learning/Predictive Modeling Book/Book Datasets/Customer Churn Model.txt')
+data.plot(kind='scatter',x='Day Mins',y='Day Charge')
+plt.show()
+
+14. # Scatter Plots in a 2x2 panel
+
+import pandas as pd
+import matplotlib.pyplot as plt
+data=pd.read_csv('E:/Personal/Learning/Predictive Modeling Book/Book Datasets/Customer Churn Model.txt')
+data=pd.read_csv('C:/python_data/Customer Churn Model.txt')
+figure,axs = plt.subplots(2, 2,sharey=True,sharex=True)
+data.plot(kind='scatter',x='Day Mins',y='Day Charge',ax=axs[0][0])
+data.plot(kind='scatter',x='Night Mins',y='Night Charge',ax=axs[0][1])
+data.plot(kind='scatter',x='Day Calls',y='Day Charge',ax=axs[1][0])
+data.plot(kind='scatter',x='Night Calls',y='Night Charge',ax=axs[1][1])
+plt.show()
+
+15. # Plotting a Histogram
+
+import matplotlib.pyplot as plt
+plt.hist(data['Day Calls'],bins=8)
+plt.xlabel('Day Calls Value')
+plt.ylabel('Frequency')
+plt.title('Frequency of Day Calls')
+plt.show()
+
+16. # Plotting a Box Plot
+
+import matplotlib.pyplot as plt
+plt.boxplot(data['Day Calls'])
+plt.ylabel('Day Calls')
+plt.title('Box Plot of Day Calls')
+plt.show()
+
