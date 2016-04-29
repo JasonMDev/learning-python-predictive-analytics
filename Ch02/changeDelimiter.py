@@ -4,7 +4,7 @@ Created on Wed Apr 27 21:41:13 2016
 
 @author: jasonm_dev
 """
-path = '/home/jasonm_dev/coding/learning-python-predictive-analytics'
+path = '/home/jasonm_dev/coding/learning-python-predictive-analytics/Ch02'
 filename1 = 'Customer Churn Model.txt'
 filename2 = 'Tab Customer Churn Model.txt'
 

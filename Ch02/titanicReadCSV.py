@@ -6,5 +6,5 @@ Created on Wed Apr 27 19:52:28 2016
 """
 
 import pandas as pd
-data = pd.read_csv('/home/jasonm_dev/coding/learning-python-predictive-analytics/titanic3.csv')
+data = pd.read_csv('/home/jasonm_dev/coding/learning-python-predictive-analytics/Ch02/titanic3.csv')
 data

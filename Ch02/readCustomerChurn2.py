@@ -5,7 +5,7 @@ Created on Wed Apr 27 19:58:48 2016
 @author: jasonm_dev
 """
 import pandas as pd
-path = '/home/jasonm_dev/coding/learning-python-predictive-analytics'
+path = '/home/jasonm_dev/coding/learning-python-predictive-analytics/Ch02'
 filename1 = 'Customer Churn Columns.csv'
 filename2 = 'Customer Churn Model.txt'
 fullpath1 = path+'/'+filename1

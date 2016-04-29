@@ -8,7 +8,7 @@ python2 uses next()
 python3 uses readline()
 """
 
-path = '/home/jasonm_dev/coding/learning-python-predictive-analytics'
+path = '/home/jasonm_dev/coding/learning-python-predictive-analytics/Ch02'
 filename = 'Customer Churn Model.txt'
 fullpath = path+'/'+filename
 
@@ -44,3 +44,14 @@ print ('The dataset has ',counter,' rows and ',no_cols,' columns')
 import pandas as pd
 df=pd.DataFrame(main_dict)
 print (df.head(10))
+
+filename_csv = 'Write.csv'
+filename_xls = 'Write.xls'
+fullpath_csv = path+'/'+filename_csv
+fullpath_xls = path+'/'+filename_xls
+
+# Write to CSV file.
+df.to_csv(fullpath_csv)
+
+# Write to xls file
+df.to_excel(fullpath_xls)
