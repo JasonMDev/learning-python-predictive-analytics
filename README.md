@@ -22,37 +22,37 @@ and published on Feb 2016.
 - [x] File: readCustomerChurn2.py
 - [x] File: changeDelimiter.py
 
-- [x] Case 2: Reading a dataset using the open method of Python
-  - [x] File: readDatasetByOpenMethod.py
+####Case 2: Reading a dataset using the open method of Python
+- [x] File: readDatasetByOpenMethod.py
 
-- [x] Case 3: Reading data from a URL
- - [x] Modified the code that it works and prints out line by line dictionary of the dataset.
- - [x] File: readURLLib2Iris.py
- - [x] File: readURLMedals.py
+####Case 3: Reading data from a URL
+- [x] Modified the code that it works and prints out line by line dictionary of the dataset.
+- [x] File: readURLLib2Iris.py
+- [x] File: readURLMedals.py
 
-- [x] Case 4: Miscellaneous cases
- - [x] File: readXLS.py
- - [x] Created the file above to read from both .xls an .xlsx
+####Case 4: Miscellaneous cases
+- [x] File: readXLS.py
+- [x] Created the file above to read from both .xls an .xlsx
 
-- [x] Basics: Summary, dimensions, and structure
- - [x] File: basicDataCheck.py
- - [x] Created the file above to read from both .xls an .xlsx
+####Basics: Summary, dimensions, and structure
+- [x] File: basicDataCheck.py
+- [x] Created the file above to read from both .xls an .xlsx
 
-- [x] Handling missing values
- - [x] File: basicDataCheck.py
- - [x] RE: Treating missing data like NaN or None
- - [x] Deletion orr imputaion
+####Handling missing values
+- [x] File: basicDataCheck.py
+- [x] RE: Treating missing data like NaN or None
+- [x] Deletion orr imputaion
 
-- [x] Creating dummy variables
- - [x] File: basicDataCheck.py
- - [x] Split into new variable 'sex_female' and 'sex_male'
- - [x] Remove column 'sex'
- - [x] Add both dummy column created above.
+####Creating dummy variables
+- [x] File: basicDataCheck.py
+- [x] Split into new variable 'sex_female' and 'sex_male'
+- [x] Remove column 'sex'
+- [x] Add both dummy column created above.
 
-- [x] Visualizing a dataset by basic plotting
- - [x] File: plotData.py
- - [x] Figure file: ScatterPlots.jpeg
- - [x] Plot Types: Scatterplot, Histograms and boxplots
+####Visualizing a dataset by basic plotting
+- [x] File: plotData.py
+- [x] Figure file: ScatterPlots.jpeg
+- [x] Plot Types: Scatterplot, Histograms and boxplots
 
 ###Chapter 3: Data Wrangling
 ####Subsetting a dataset
@@ -83,18 +83,23 @@ and published on Feb 2016.
  - [x] File: generateDummyDataFrame.py
 
 ####Grouping the data – aggregation, filtering, and transformation
-- [ ] Subtitle
+- [x] File: groupData.py
+- [x] Grouping
+- [x] Aggregation
+- [x] Filtering
+- [x] Transformation
+- [x] Miscellaneous operations
+
+####Random sampling – splitting a dataset in training and testing datasets
+- [ ] Section
  - [ ] File:
+ - [ ] SubSection
 - [ ] 
 - [ ] 
 - [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ]   
 
 ####SubChapter
-- [ ]Section
+- [ ] Section
  - [ ] File:
  - [ ] SubSection
 - [ ] 
