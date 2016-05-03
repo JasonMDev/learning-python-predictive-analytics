@@ -100,8 +100,9 @@ and published on Feb 2016.
 - [x] File: concatenateAndAppend.py
 - [x] File: appendManyFiles.py
 
-####SubChapter
-- [x] Section
+####Merging/joining datasets
+- [x] File: mergeJoin.py
+- [ ] Inner Join
  - [x] File:
  - [ ] SubSection
 - [x] 
