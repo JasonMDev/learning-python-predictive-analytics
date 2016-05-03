@@ -91,14 +91,27 @@ and published on Feb 2016.
 - [x] Miscellaneous operations
 
 ####Random sampling – splitting a dataset in training and testing datasets
-- [ ] Section
- - [ ] File:
+- [ ] File: splitDataTrainTest.py
+ - [x] Method 1: using the Customer Churn Model
+ - [x] Method 2: using sklearn
+ - [ ] Method 3: using the shuffle function
+
+####Concatenating and appending data
+- [x] File: concatenateAndAppend.py
+- [x] File: appendManyFiles.py
+
+####SubChapter
+- [x] Section
+ - [x] File:
  - [ ] SubSection
+- [x] 
+- [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
 
-####SubChapter
+
+- [ ] ####SubChapter
 - [ ] Section
  - [ ] File:
  - [ ] SubSection
@@ -107,4 +120,13 @@ and published on Feb 2016.
 - [ ] 
 - [ ] 
 - [ ] 
-- [ ]   
+- [ ] ####SubChapter
+- [ ] Section
+ - [ ] File:
+ - [ ] SubSection
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
