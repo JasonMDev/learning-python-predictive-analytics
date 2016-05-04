@@ -110,24 +110,29 @@ and published on Feb 2016.
 - [x] An example of the Right Join
 - [x] Summary of Joins in terms of their length
 
-###Chapter 4. Statistical Concepts for Predictive Modelling
-####SubChapter
-- [ ] Section
- - [ ] File:
- - [ ] SubSection
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+###Chapter 4: Statistical Concepts for Predictive Modelling
+####Random sampling and central limit theorem
+####Hypothesis testing
+- [x] Null versus alternate hypothesis
+- [x] Z-statistic and t-statistic
+- [x] Confidence intervals, significance levels, and p-values
+- [x] Different kinds of hypothesis test
+- [x] A step-by-step guide to do a hypothesis test
+- [x] An example of a hypothesis test
+####Chi-square testing
+####Correlation
+- [x] File: linearRegression.py
+- [x] File: linearRegressionFunction.py
+- [x] Picture: TVSalesCorrelationPlot.png
+- [x] Picture: RadioSalesCorrelationPlot.png
+- [x] Picture: NewspaperSalesCorrelationPlot.png
 
+###Chapter 5: Linear Regression with Python
 ####SubChapter
 - [ ] Section
  - [ ] File:
  - [ ] SubSection
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [x] 
+- [x] 
+- [x] 
+- [x] 
