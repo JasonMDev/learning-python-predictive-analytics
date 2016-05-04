@@ -102,17 +102,16 @@ and published on Feb 2016.
 
 ####Merging/joining datasets
 - [x] File: mergeJoin.py
-- [ ] Inner Join
- - [x] File:
- - [ ] SubSection
-- [x] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [x] Inner Join
+- [x] Left Join
+- [x] Right Join
+- [x] An example of the Inner Join
+- [x] An example of the Left Join
+- [x] An example of the Right Join
+- [x] Summary of Joins in terms of their length
 
-
-- [ ] ####SubChapter
+###Chapter 4. Statistical Concepts for Predictive Modelling
+####SubChapter
 - [ ] Section
  - [ ] File:
  - [ ] SubSection
@@ -121,7 +120,8 @@ and published on Feb 2016.
 - [ ] 
 - [ ] 
 - [ ] 
-- [ ] ####SubChapter
+
+####SubChapter
 - [ ] Section
  - [ ] File:
  - [ ] SubSection

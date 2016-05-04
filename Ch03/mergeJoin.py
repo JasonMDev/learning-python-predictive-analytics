@@ -70,3 +70,33 @@ sports_map_dp.shape # Out: (6956, 2)
 merged_final=pd.merge(left=merged_dp,right=sports_map_dp,left_on='Athlete',right_on='Athlete')
 merged_final.shape # Out: (8618, 10)
 merged_final.head()
+
+
+# MERGE TYPES
+# PYTHON 2.7 uses '<>', whereas python3.5 uses '!='
+# Prepare the data with some mismathes to show join examples.
+country_map_dlt=country_map_dp[(country_map_dp['Athlete']!='Michael Phelps') & (country_map_dp['Athlete']!='Natalie Coughlin') & (country_map_dp['Athlete']!='Chen Jing')
+                    & (country_map_dp['Athlete']!='Richard Thompson') & (country_map_dp['Athlete']!='Matt Ryan')]
+len(country_map_dlt) # Out: 6951
+sports_map_dlt=sports_map_dp[(sports_map_dp['Athlete']!='Michael Phelps') & (sports_map_dp['Athlete']!='Natalie Coughlin') & (sports_map_dp['Athlete']!='Chen Jing')
+                    & (sports_map_dp['Athlete']!='Richard Thompson') & (sports_map_dp['Athlete']!='Matt Ryan')]
+len(sports_map_dlt) # Out: 6951
+
+data_main_dlt=data_main[(data_main['Athlete']!='Michael Phelps') & (data_main['Athlete']!='Natalie Coughlin') & (data_main['Athlete']!='Chen Jing')
+                    & (data_main['Athlete']!='Richard Thompson') & (data_main['Athlete']!='Matt Ryan')]
+len(data_main_dlt) # Out: 8605
+
+# INNER JOIN EXAMPLE
+merged_inner=pd.merge(left=data_main,right=country_map_dlt,how='inner',left_on='Athlete',right_on='Athlete')
+len(merged_inner) # Out: 8605
+
+# LEFT JOIN EXAMPLE
+merged_left=pd.merge(left=data_main,right=country_map_dlt,how='left',left_on='Athlete',right_on='Athlete')
+len(merged_left) # Out: 8618
+# Check the athletes which don't have information because of the left join.
+merged_left_slt=merged_left[merged_left['Athlete']=='Michael Phelps']
+merged_left_slt
+
+# RIGHT JOIN EXAMPLE
+merged_right=pd.merge(left=data_main_dlt,right=country_map_dp,how='right',left_on='Athlete',right_on='Athlete')
+len(merged_right) # Out: 8610
