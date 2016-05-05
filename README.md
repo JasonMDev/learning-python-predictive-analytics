@@ -128,11 +128,18 @@ and published on Feb 2016.
 - [x] Picture: NewspaperSalesCorrelationPlot.png
 
 ###Chapter 5: Linear Regression with Python
-####SubChapter
-- [ ] Section
- - [ ] File:
- - [ ] SubSection
-- [x] 
-- [x] 
-- [x] 
-- [x] 
+####Understanding the maths behind linear regression
+- [x] Linear regression using simulated data
+ - [x] File: linearRegression.py
+ - [x] Picture: CurrentVsPredicted1.png
+ - [x] Picture: CurrentVsPredictedVsMean1.png
+ - [x] Picture: CurrentVsPredictedVsModel1.png
+####Making sense of result parameters
+- [x] File: linearRegression.py
+- [x] p-values
+- [x] F-statistics
+- [x] Residual Standard Error (RSE)
+####Implementing linear regression with Python
+- [x] Linear regression using the statsmodel library
+ - [x] File: linearRegression.py
+- [ ] Multiple linear regression 
