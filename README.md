@@ -119,6 +119,7 @@ and published on Feb 2016.
 - [x] Different kinds of hypothesis test
 - [x] A step-by-step guide to do a hypothesis test
 - [x] An example of a hypothesis test
+
 ####Chi-square testing
 ####Correlation
 - [x] File: linearRegression.py
@@ -134,11 +135,13 @@ and published on Feb 2016.
  - [x] Picture: CurrentVsPredicted1.png
  - [x] Picture: CurrentVsPredictedVsMean1.png
  - [x] Picture: CurrentVsPredictedVsModel1.png
+
 ####Making sense of result parameters
 - [x] File: linearRegression.py
 - [x] p-values
 - [x] F-statistics
 - [x] Residual Standard Error (RSE)
+
 ####Implementing linear regression with Python
 - [x] File: linearRegressionSMF.py
 - [x] Linear regression using the statsmodel library
@@ -146,6 +149,7 @@ and published on Feb 2016.
 - [x] Multi-collinearity: sub-optimal performance of the model
  - [x] Variance Inflation Factor
   - [x]  It is a method to quantify the rise in the variability of the coefficient estimate of a particular variable because of high correlation between two or more than two predictor variables.
+
 ####Model validation
 - [x] Training and testing data split 
  - [x] File: linearRegressionSMF.py
@@ -154,6 +158,7 @@ and published on Feb 2016.
 - [x] Feature selection with scikit-learn
  - [x] Recursive Feature Elimination (RFE)
  - [x] File: linearRegressionRFE.py
+
 ####Handling other issues in linear regression
 - [x] Handling categorical variables
  - [x] File: linearRegressionECom.py
@@ -166,3 +171,8 @@ and published on Feb 2016.
 - [x] Other considerations and assumptions for linear regression
 
 ###Chapter 6: Logistic Regression with Python
+####Linear regression versus logistic regression
+####Understanding the math behind logistic regression
+- [x] File: logisticRegression.py
+- [x] Contingency tables
+- [ ] Conditional probability
