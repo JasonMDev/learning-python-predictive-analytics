@@ -161,3 +161,8 @@ and published on Feb 2016.
  - [x] File: nonlinearRegression.py
  - [x] Picture:  MPGVSHorsepower.png
  - [x] Picture:  MPGVSHorsepowerVsLine.png
+ - [x] Picture:  MPGVSHorsepowerModels.png
+- [x] Handling outliers
+- [x] Other considerations and assumptions for linear regression
+
+###Chapter 6: Logistic Regression with Python

@@ -30,55 +30,65 @@ plt.plot(data['horsepower'],data['mpg'],'ro')
 plt.xlabel('Horsepower')
 plt.ylabel('MPG (Miles Per Gallon)')
 
+# Model 1
 # Try linear model.
+# MPG = co + alpha*HP
 X=data['horsepower'].fillna(data['horsepower'].mean())
 Y=data['mpg'].fillna(data['mpg'].mean())
 lm=LinearRegression()
 lm.fit(X[:,np.newaxis],Y)
 
 # Plot Again
-plt.plot(data['horsepower'],data['mpg'],'ro')
-plt.plot(X,lm.predict(X[:,np.newaxis]),color='blue')
+#plt.plot(data['horsepower'],data['mpg'],'ro')
+#plt.plot(X,lm.predict(X[:,np.newaxis]),color='blue')
 
 # R2 score
 lm.score(X[:,np.newaxis],Y) # Out: 0.57465334064502505
 
 # Alternative method for RSE
 RSEd=(Y-lm.predict(X[:,np.newaxis]))**2
-RSE=np.sqrt(np.sum(RSEd)/389)
+RSE1=np.sqrt(np.sum(RSEd)/389)
 ymean=np.mean(Y)
-error=RSE/ymean
-RSE,error # Out: (5.1496254786975237, 0.21899719414044677)
+error1=RSE1/ymean
+RSE1,error1 # Out: (5.1496254786975237, 0.21899719414044677)
 
-# In the form of mpg = co+a1.horsepower2,
-Xp=data['horsepower'].fillna(data['horsepower'].mean())*data['horsepower'].fillna(data['horsepower'].mean())
-Yp=data['mpg'].fillna(data['mpg'].mean())
+# Model 2
+# In the form of mpg = co+a1.horsepower**2,
+X2=data['horsepower'].fillna(data['horsepower'].mean())*data['horsepower'].fillna(data['horsepower'].mean())
+Y2=data['mpg'].fillna(data['mpg'].mean())
 lm2=LinearRegression()
-lm2.fit(Xp[:,np.newaxis],Yp)
+lm2.fit(X2[:,np.newaxis],Y2)
 
-type(lm2.predict(Xp[:,np.newaxis]))
-RSEd=(Yp-lm2.predict(Xp[:,np.newaxis]))**2
-RSE=np.sqrt(np.sum(RSEd)/390)
-ymean=np.mean(Yp)
-error=RSE/ymean
-RSE,error,ymean 
+type(lm2.predict(X2[:,np.newaxis]))
+RSEd=(Y2-lm2.predict(X2[:,np.newaxis]))**2
+RSE2=np.sqrt(np.sum(RSEd)/390)
+ymean=np.mean(Y2)
+error2=RSE2/ymean
+RSE2,error2,ymean 
 # Out: (5.6591995312606125, 0.24066775798625065, 23.51457286432162)
 
-# Attempt polynomial fit with 2 degrees
-X2=data['horsepower'].fillna(data['horsepower'].mean())
-Y2=data['mpg'].fillna(data['mpg'].mean())
-poly = PolynomialFeatures(degree=2)
-X2_ = poly.fit_transform(X2[:,np.newaxis])
-clf2 = linear_model.LinearRegression()
-clf2.fit(X2_, Y2)
+# R2 score
+lm2.score(X2[:,np.newaxis],Y2) # Out: 0.48498870348232048
 
-print (clf2.intercept_) # Out: 55.0261924471
-print (clf2.coef_) # Out:[ 0. -0.43404318  0.00112615]
+print (lm2.intercept_) # Out: 30.405683105
+print (lm2.coef_) # Out:[ 0. -0.43404318  0.00112615]
+
+# Model 3
+# Attempt polynomial fit with 2 degrees
+X3=data['horsepower'].fillna(data['horsepower'].mean())
+Y3=data['mpg'].fillna(data['mpg'].mean())
+poly = PolynomialFeatures(degree=2)
+X3_ = poly.fit_transform(X3[:,np.newaxis])
+clf3 = linear_model.LinearRegression()
+clf3.fit(X3_, Y3)
+
+print (clf3.intercept_) # Out: 55.0261924471
+print (clf3.coef_) # Out: [-0.00055043]
 
 # R2 score # R2 = 0.688
-clf2.score(X2_,Y2) # Out:  0.6439066584257469
+clf3.score(X3_,Y3) # Out:  0.6439066584257469
 
-
+# Model 4
 # Attempt polynomial fit with 5 degrees
 X5=data['horsepower'].fillna(data['horsepower'].mean())
 Y5=data['mpg'].fillna(data['mpg'].mean())
@@ -95,34 +105,15 @@ print (clf5.coef_)
 # R2 = 0.7
 clf5.score(X5_,Y5) # Out: 0.6547512491826567
 
-# Attempt polynomial fit with 10 degrees
-X10=data['horsepower'].fillna(data['horsepower'].mean())
-Y10=data['mpg'].fillna(data['mpg'].mean())
-poly = PolynomialFeatures(degree=10)
-X10_ = poly.fit_transform(X10[:,np.newaxis])
-clf10 = linear_model.LinearRegression()
-clf10.fit(X10_, Y10)
-
-print (clf10.intercept_) # Out: 38.4429617473
-print (clf10.coef_) 
-# Out:[  0.00000000e+00  -8.91906448e-10  -7.66530280e-13  -2.72221136e-11
-#  -1.29904249e-09  -3.51786115e-08   8.70655852e-10  -8.87303697e-12
-#   4.60555310e-14  -1.20912891e-16   1.27851931e-19]
-
-# R2 = 0.7
-clf10.score(X10_,Y10) # Out: 0.65235699758560406
 
 # Plot All
-plt.plot(data['horsepower'],data['mpg'],'ro')
-plt.plot(X,lm.predict(X[:,np.newaxis]),color='blue')
-plt.plot(Xp,lm2.predict(Xp[:,np.newaxis]),color='blue')
-#plt.plot(X,clf2.predict(X2_[:,np.newaxis]),color='blue')
-#plt.plot(X,Y5,color='blue')
-#plt.plot(X,Y10,color='blue')
+XP = np.arange(45,248,0.5)
+M2 = 30.405683105 -0.00055043*XP**2
+M3 = 55.0261924471 - 0.43404318*XP + 0.00112615*XP**2
+M4 = -40.6939920548 + 4.00021890e+00*XP -7.54802463e-02*XP**2 + 6.19621638e-04*XP**3 -2.36220983e-06*XP**4 + 3.41983064e-09*XP**5
 
-##TODO:
-
-# Add higher degrees fits and plot them.
-
-
-# R2 = 0.7
+plt.plot(data['horsepower'],data['mpg'],'ro') # Actual Data
+plt.plot(XP,lm.predict(XP[:,np.newaxis]),color='magenta')
+plt.plot(XP,M2,color='blue') # Model 2
+plt.plot(XP,M3,color='green') # Model 3
+plt.plot(XP,M4,color='yellow') # Model 4
