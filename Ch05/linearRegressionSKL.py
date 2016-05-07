@@ -30,7 +30,10 @@ lm.fit(trainX, trainY)
 print (lm.intercept_) # Out: 2.98314900713
 print (lm.coef_) # Out: [ 'TV': 0.04536014  'Radio': 0.18767089]
 
-zip(feature_cols, lm.coef_) # Doesn't reallly work.
+zipped = zip(feature_cols, lm.coef_)
+list(zipped)
+# Out:
+#[('TV', 0.044571627228483394), ('Radio', 0.19465327712760053)]
 
 # Rsquared
 lm.score(trainX, trainY) # Out: 0.89235897920220186

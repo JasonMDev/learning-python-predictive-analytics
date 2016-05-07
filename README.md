@@ -155,3 +155,9 @@ and published on Feb 2016.
  - [x] Recursive Feature Elimination (RFE)
  - [x] File: linearRegressionRFE.py
 ####Handling other issues in linear regression
+- [x] Handling categorical variables
+ - [x] File: linearRegressionECom.py
+- [x] Transforming a variable to fit non-linear relations
+ - [x] File: nonlinearRegression.py
+ - [x] Picture:  MPGVSHorsepower.png
+ - [x] Picture:  MPGVSHorsepowerVsLine.png
