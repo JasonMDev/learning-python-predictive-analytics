@@ -140,6 +140,18 @@ and published on Feb 2016.
 - [x] F-statistics
 - [x] Residual Standard Error (RSE)
 ####Implementing linear regression with Python
+- [x] File: linearRegressionSMF.py
 - [x] Linear regression using the statsmodel library
- - [x] File: linearRegression.py
-- [ ] Multiple linear regression 
+- [x] Multiple linear regression
+- [x] Multi-collinearity: sub-optimal performance of the model
+ - [x] Variance Inflation Factor
+  - [x]  It is a method to quantify the rise in the variability of the coefficient estimate of a particular variable because of high correlation between two or more than two predictor variables.
+####Model validation
+- [x] Training and testing data split 
+ - [x] File: linearRegressionSMF.py
+- [x] Linear regression with scikit-learn
+ - [x] File: linearRegressionSKL.py 
+- [x] Feature selection with scikit-learn
+ - [x] Recursive Feature Elimination (RFE)
+ - [x] File: linearRegressionRFE.py
+####Handling other issues in linear regression
