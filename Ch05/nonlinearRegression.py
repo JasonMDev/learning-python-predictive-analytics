@@ -105,6 +105,9 @@ print (clf5.coef_)
 # R2 = 0.7
 clf5.score(X5_,Y5) # Out: 0.6547512491826567
 
+# Model 5
+# Try y = 1/x or 1/x2
+
 
 # Plot All
 XP = np.arange(45,248,0.5)

@@ -175,4 +175,15 @@ and published on Feb 2016.
 ####Understanding the math behind logistic regression
 - [x] File: logisticRegression.py
 - [x] Contingency tables
-- [ ] Conditional probability
+- [x] Conditional probability
+- [x] Odds ratio
+- [x] Moving on to logistic regression from linear regression
+- [x] Estimation using the Maximum Likelihood Method
+ - [x] Building the logistic regression model from scratch
+ - [x] File: logisticRegressionScratch.py
+ - [ ] Read above again.
+- [x] Making sense of logistic regression parameters
+ - [x] Wald test
+ - [x] Likelihood Ratio Test statistic
+ - [x] Chi-square test
+- [x] 

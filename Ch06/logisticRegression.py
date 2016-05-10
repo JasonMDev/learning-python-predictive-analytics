@@ -28,3 +28,4 @@ contingency_table.sum(axis=0)
 
 # Calculate the proportions
 contingency_table.astype('float').div(contingency_table.sum(axis=1),axis=0)
+
