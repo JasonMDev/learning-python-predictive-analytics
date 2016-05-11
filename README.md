@@ -186,4 +186,13 @@ and published on Feb 2016.
  - [x] Wald test
  - [x] Likelihood Ratio Test statistic
  - [x] Chi-square test
-- [x] 
+- [x]
+
+####Implementing logistic regression with Python
+- [x] File: logisticRegressionImplementation.py
+- [x] Processing the data
+- [x] Data exploration
+- [x] Data visualization
+- [x] Creating dummy variables for categorical variables
+- [ ] Feature selection
+
