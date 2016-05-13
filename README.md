@@ -204,6 +204,42 @@ and published on Feb 2016.
 ####Model validation
 - [x] File: logisticRegressionImplementation.py
 - [x] The ROC curve {see terms}
+
+###Chapter 7: Clustering with Python 
+####Introduction to clustering – what, why, and how?
+- [x] What is clustering?
+- [x] How is clustering used?
+- [x] Why do we do clustering?
+
+####Mathematics behind clustering
+- [x] Distances between two observations
+ - [x] Euclidean distance
+ - [x] Manhattan distance
+ - [x] Minkowski distance
+ - [x] The distance matrix
+- [x] Normalizing the distances
+- [x] Linkage methods
+ - [x] Single linkage
+ - [x] Compete linkage
+ - [x] Average linkage
+ - [x] Centroid linkage
+ - [x] Ward's method uses ANOVA method
+- [x] Hierarchical clustering
+- [x] K-means clustering
+ - [x] File: kMeanClustering.py
+
+####Implementing clustering using Python
+- [x] File: clusterWine.py
+- [x] Importing and exploring the dataset
+- [x] Normalizing the values in the dataset
+- [x] Hierarchical clustering using scikit-learn
+- [x] K-Means clustering using scikit-learn
+ - [x] Interpreting the cluster
+
+####Fine-tuning the clustering 
+- [x] The elbow method
+- [x] Silhouette Coefficient
 - [x] 
 - [x] 
 - [x] 
+

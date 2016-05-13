@@ -293,6 +293,7 @@ y=[i*0.01 for i in range(100)]
 #plt.title('ROC Curve')
 
 # Using scikit-learn package to plot the ROC Curve
+#TODO: 
 from sklearn import metrics
 from ggplot import *
 
@@ -300,8 +301,7 @@ prob = clf1.predict_proba(X_test)[:,1]
 fpr, sensitivity, _ = metrics.roc_curve(Y_test, prob)
 
 df = pd.DataFrame(dict(fpr=fpr, sensitivity=sensitivity))
-ggplot(df, aes(x='fpr', y='sensitivity')) +\
-    geom_line() +\
+ggplot(df, aes(x='fpr', y='sensitivity')) + geom_line() +\
     geom_abline(linetype='dashed')
     
 # Area under the curve
