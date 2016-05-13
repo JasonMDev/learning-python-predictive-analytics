@@ -66,3 +66,6 @@ plt.hist(df_norm['clust'])
 plt.title('Histogram of Clusters')
 plt.xlabel('Cluster')
 plt.ylabel('Frequency')
+
+# Calculate the mean of the composition for each cluster and component
+df_norm.groupby('clust').mean()

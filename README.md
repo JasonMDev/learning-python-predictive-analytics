@@ -239,7 +239,48 @@ and published on Feb 2016.
 ####Fine-tuning the clustering 
 - [x] The elbow method
 - [x] Silhouette Coefficient
+
+###Chapter 8: Trees and Random Forests with Python
+####
 - [x] 
 - [x] 
 - [x] 
+- [x] 
+
+
+###Chapter 9: Best Practices for Predictive Modelling
+####Best practices for coding
+- [x] Commenting the codes
+- [x] Defining functions for substantial individual tasks
+ - [x] Example 1
+ - [x] Example 2
+ - [x] Example 3
+- [x] Avoid hard-coding of variables as much as possible
+- [x] Version control
+- [x] Using standard libraries, methods, and formulas
+
+####Best practices for data handling
+
+####Best practices for algorithms
+
+####Best practices for statistics
+
+####Best practices for business contexts
+- [x] 
+- [x] 
+- [x] 
+- [x] 
+
+####
+- [x] 
+- [x] 
+- [x] 
+- [x] 
+
+####
+- [x] 
+- [x] 
+- [x] 
+- [x] 
+
 
