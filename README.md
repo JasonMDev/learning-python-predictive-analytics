@@ -194,5 +194,16 @@ and published on Feb 2016.
 - [x] Data exploration
 - [x] Data visualization
 - [x] Creating dummy variables for categorical variables
-- [ ] Feature selection
+- [x] Feature selection
+- [x] Implementing the model
 
+####Model validation and evaluation
+- [x] File: logisticRegressionImplementation.py
+- [x] Cross validation
+
+####Model validation
+- [x] File: logisticRegressionImplementation.py
+- [x] The ROC curve {see terms}
+- [x] 
+- [x] 
+- [x] 
