@@ -241,11 +241,38 @@ and published on Feb 2016.
 - [x] Silhouette Coefficient
 
 ###Chapter 8: Trees and Random Forests with Python
-####
-- [x] 
-- [x] 
-- [x] 
-- [x] 
+####Introducing decision trees
+- [x] A decision tree
+
+####Understanding the mathematics behind decision trees
+- [x] Homogeneity
+- [x] Entropy
+- [x] Information gain
+- [x] ID3 algorithm to create a decision tree
+- [x] Gini index
+- [x] Reduction in Variance
+- [x] Pruning a tree 
+- [x] Handling a continuous numerical variable
+- [x] Handling a missing value of an attribute
+
+####Implementing a decision tree with scikit-learn
+- [x] File: decisionTreeIris.py
+- [x] Visualizing the tree
+- [x] Picture: dtree2.png
+- [x] File: dtree2.dot
+- [x] Cross-validating and pruning the decision tree
+
+####Understanding and implementing regression trees
+- [x] File: regressionTree.py
+- [x] Regression tree algorithm
+- [x] Implementing a regression tree using Python
+
+####Understanding and implementing random forests
+- [x] File: randomForest.py
+- [x] The random forest algorithm
+- [x] Implementing a random forest using Python
+- [x] Why do random forests work?
+- [x] Important parameters for random forests
 
 
 ###Chapter 9: Best Practices for Predictive Modelling
@@ -266,21 +293,6 @@ and published on Feb 2016.
 ####Best practices for statistics
 
 ####Best practices for business contexts
-- [x] 
-- [x] 
-- [x] 
-- [x] 
 
-####
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-
-####
-- [x] 
-- [x] 
-- [x] 
-- [x] 
 
 
