@@ -1,4 +1,4 @@
-# Ruby on Rails Tutorial: Sample Application
+# Predictive Analytics with Python
 
 These are my notes from working through the book
 [*Learning Predictive Analytics with Python*](https://www.packtpub.com/big-data-and-business-intelligence/learning-predictive-analytics-python)
